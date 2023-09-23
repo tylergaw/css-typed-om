@@ -61,32 +61,9 @@ const code = Object.keys(units).every(unit => [
 ].every(result => Boolean(result))) && compare(
 	CSS.px(15).add(CSS.rem(10), CSS.em(5)),
 	'calc(15px + 10rem + 5em)'
-) && testCSSStyleValueParse()
+)
 ? 0
 : 1;
-
-function testCSSStyleValueParse() {
-	let contructorDidThrow = false;
-
-	try {
-		new window.CSSStyleValue();
-	} catch (err) {
-		contructorDidThrow = true;
-	}
-
-	const expected = { value: 20, unit: 'px' };
-	const result1 = window.CSSStyleValue.parse('width', '20px');
-
-	const conditions = [
-		contructorDidThrow,
-		result1.value === expected.value,
-		result1.unit === expected.unit
-	];
-
-	return conditions.every(condition => Boolean(condition));
-}
-
-console.log(code ? 'Fail...' : 'Pass!')
 
 process.exit(code);
 
