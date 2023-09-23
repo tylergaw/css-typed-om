@@ -1,5 +1,8 @@
 # CSS Typed Object Model [<img src="http://jonathantneal.github.io/js-logo.svg" alt="js logo" width="90" height="90" align="right">][CSS Typed Object Model]
 
+> [!WARNING]  
+> This is a fork of the original css-typed-om
+
 [![NPM Version][npm-img]][npm-url]
 [![Build Status][cli-img]][cli-url]
 
@@ -108,19 +111,35 @@ CSS.px(15).min(CSS.rem(10), CSS.em(5)) /* CSSMathMin {
 
 ### polyfill
 
-The `polyfill` function adds the following functions to `window` if they do not
+The `polyfill` function adds CSS Typed OM interfaces to `window` if they do not
 already exist:
 
-- `CSS`
+#### CSS
+
+#### CSSStyleValue
+
+- Spec https://drafts.css-houdini.org/css-typed-om/#stylevalue-objects
+- MDN https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleValue
+
+##### Static methods
+- ⚠️ `parse()` - Partial implementation
+- 🚫 `parseAll()` - Not implemented yet
+
+##### Classes based on CSSStyleValue
+- 🚫 `CSSImageValue` - Not implemented yet
 - `CSSKeywordValue`
+- `CSSNumericValue`
+- 🚫 `CSSPositionValue` - Not implemented yet
+- 🚫 `CSSTransformValue` - Not implemented yet
+- `CSSUnparsedValue`
+- `StylePropertyMap`
+
 - `CSSMathInvert`
 - `CSSMathMax`
 - `CSSMathMin`
 - `CSSMathProduct`
 - `CSSMathSum`
-- `CSSStyleValue`
 - `CSSUnitValue`
-- `StylePropertyMap`
 
 It then adds the following functions to `CSS` if they do not already exist:
 

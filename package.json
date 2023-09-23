@@ -17,9 +17,8 @@
   "scripts": {
     "prepublishOnly": "npm test",
     "pretest": "rollup -c .rollup.js --silent",
-    "test": "echo 'Running tests...'; npm run test:js && npm run test:tape",
-    "test:js": "eslint *.js lib/*.js --cache --ignore-path .gitignore --quiet",
-    "test:tape": "node test"
+    "test": "echo 'Running tests...'; npm run test:js && node --test",
+    "test:js": "eslint *.js lib/*.js --cache --ignore-path .gitignore --quiet"
   },
   "engines": {
     "node": ">=18.0.0"
