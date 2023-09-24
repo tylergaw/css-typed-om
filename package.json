@@ -16,7 +16,8 @@
   ],
   "scripts": {
     "prepublishOnly": "npm test",
-    "pretest": "rollup -c .rollup.js --silent",
+    "build": "rollup -c .rollup.js --silent",
+    "pretest": "npm run build",
     "test": "echo 'Running tests...'; npm run test:js && node --test",
     "test:js": "eslint *.js lib/*.js --cache --ignore-path .gitignore --quiet"
   },
@@ -28,7 +29,6 @@
     "@babel/eslint-parser": "7.22.15",
     "@babel/preset-env": "7.22.20",
     "@rollup/plugin-babel": "6.0.3",
-    "babel-plugin-array-includes": "2.0.3",
     "eslint": "8.50.0",
     "eslint-config-dev": "3.3.1",
     "pre-commit": "^1.2.2",

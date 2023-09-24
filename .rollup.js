@@ -9,9 +9,6 @@ export default {
 	plugins: [
 		babel({
 			babelHelpers: 'bundled',
-			plugins: [
-				'array-includes'
-			],
 			presets: [
 				['@babel/preset-env', { modules: false, targets: { node: 18 } }]
 			]
