@@ -31,16 +31,14 @@ This is a work in progress. We don't have 100% of the CSS Typed OM features impl
 
 | Feature                                                                                                                  | Implemented  | Notes                                                               |
 | ------------------------------------------------------------------------------------------------------------------------ | ------------ | ------------------------------------------------------------------- |
-| **StylePropertyMapReadyOnly**                                                                                            |              | Issue #16                                                           |
-| [StylePropertyMapReadyOnly](https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadyOnly)                  | ❌ No        |                                                                     |
-| [StylePropertyMapReadyOnly.size](https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/size)         | ❌ No        |                                                                     |
+| **StylePropertyMapReadyOnly**                                                                                            |              |                                                                     |
+| [StylePropertyMapReadyOnly](https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadyOnly)                  | ✅ Yes       |                                                                     |
+| [StylePropertyMapReadyOnly.size](https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/size)         | ✅ Yes       |                                                                     |
 | [StylePropertyMapReadyOnly.entries()](https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/entries) | ❌ No        |                                                                     |
 | [StylePropertyMapReadyOnly.forEach()](https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/forEach) | ❌ No        |                                                                     |
-| [StylePropertyMapReadyOnly.get()](https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/get)         | ❌ No        |                                                                     |
-| [StylePropertyMapReadyOnly.forEach()](https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/forEach) | ❌ No        |                                                                     |
-| [StylePropertyMapReadyOnly.get()](https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/get)         | ❌ No        |                                                                     |
+| [StylePropertyMapReadyOnly.get()](https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/get)         | ✅ Yes       |                                                                     |
 | [StylePropertyMapReadyOnly.getAll()](https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/getAll)   | ❌ No        |                                                                     |
-| [StylePropertyMapReadyOnly.has()](https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/has)         | ❌ No        |                                                                     |
+| [StylePropertyMapReadyOnly.has()](https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/has)         | ✅ Yes       |                                                                     |
 | [StylePropertyMapReadyOnly.keys()](https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/keys)       | ❌ No        |                                                                     |
 | [StylePropertyMapReadyOnly.values()](https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/values)   | ❌ No        |                                                                     |
 | **StylePropertyMap**                                                                                                     |              |                                                                     |
