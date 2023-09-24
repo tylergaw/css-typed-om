@@ -19,6 +19,7 @@
     "build": "rollup -c .rollup.js --silent",
     "pretest": "npm run build",
     "test": "echo 'Running tests...'; npm run lint && node --test",
+    "test:watch": "node --test --watch .",
     "lint": "eslint *.js lib/*.js --cache --ignore-path .gitignore --quiet",
     "prettier": "prettier . --write",
     "prepare": "husky install"
