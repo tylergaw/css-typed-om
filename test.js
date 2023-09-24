@@ -1,5 +1,4 @@
-// FIXME: Importing from the bundled module seems wrong.
-import polyfill from "./index.es.js";
+import polyfill from "./demo/css-typed-om-polyfill.js";
 const CSS = {};
 const window = { CSS, CSSRule: { prototype: {} }, Element: { prototype: {} } };
 
