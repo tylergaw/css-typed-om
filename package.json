@@ -18,27 +18,25 @@
     "prepublishOnly": "npm test",
     "build": "rollup -c .rollup.js --silent",
     "pretest": "npm run build",
-    "test": "echo 'Running tests...'; npm run test:js && node --test",
-    "test:js": "eslint *.js lib/*.js --cache --ignore-path .gitignore --quiet"
+    "test": "echo 'Running tests...'; npm run lint && node --test",
+    "lint": "eslint *.js lib/*.js --cache --ignore-path .gitignore --quiet",
+    "prettier": "prettier . --write",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   },
   "engines": {
     "node": ">=18.0.0"
   },
   "devDependencies": {
-    "@babel/core": "7.22.20",
-    "@babel/eslint-parser": "7.22.15",
-    "@babel/preset-env": "7.22.20",
-    "@rollup/plugin-babel": "6.0.3",
     "eslint": "8.50.0",
     "eslint-config-dev": "3.3.1",
+    "eslint-config-prettier": "9.0.0",
+    "husky": "8.0.3",
+    "lint-staged": "14.0.1",
+    "prettier": "3.0.3",
     "rollup": "3.29.2"
-  },
-  "eslintConfig": {
-    "extends": "dev",
-    "parser": "@babel/eslint-parser",
-    "parserOptions": {
-      "requireConfigFile": false
-    }
   },
   "keywords": [
     "css",
