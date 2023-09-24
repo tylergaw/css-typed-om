@@ -1,12 +1,10 @@
 node_modules
-index.*.js
-package-lock.json
 *.log*
-*.result.css
 .eslintcache
-!.appveyor.yml
-!.editorconfig
-!.gitignore
-!.rollup.js
-!.tape.js
-!.travis.yml
+
+# macOS-specific files
+.DS_Store
+
+# Other locks
+yarn.lock
+pnpm-lock.yaml
