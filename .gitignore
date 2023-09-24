@@ -3,7 +3,7 @@ index.*.js
 package-lock.json
 *.log*
 *.result.css
-.*
+.eslintcache
 !.appveyor.yml
 !.editorconfig
 !.gitignore
