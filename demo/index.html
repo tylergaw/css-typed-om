@@ -4,6 +4,20 @@
     <script type="module">
       import polyfill from "./css-typed-om-polyfill.js";
       polyfill(window);
+
+      const tester = document.querySelector("body");
+      try {
+        const styleMap = tester.computedStyleMap();
+        window.styleMap = styleMap;
+        console.log("styleMap set as global variable", window.styleMap);
+
+        for (const k of styleMap) {
+          console.log(k)
+        }
+        
+      } catch (error) {
+        console.warn(error);
+      }
     </script>
   </head>
   <body>
