@@ -1,26 +1,23 @@
 {
   "name": "css-typed-om",
   "version": "0.4.0",
-  "description": "Use CSS Typed Object Model in the browser",
-  "author": "Jonathan Neal <jonathantneal@hotmail.com>",
+  "description": "A polyfill for CSS Typed OM.",
+  "contributors": [
+    "Jonathan Neal <jonathantneal@hotmail.com>",
+    "Tyler Gaw <me@tylergaw.com> (https://tylergaw.com)"
+  ],
   "license": "CC0-1.0",
   "repository": "csstools/css-typed-om",
   "homepage": "https://github.com/csstools/css-typed-om#readme",
   "bugs": "https://github.com/csstools/css-typed-om/issues",
   "type": "module",
-  "main": "index.umd.js",
-  "module": "index.es.js",
-  "files": [
-    "index.umd.js",
-    "index.es.js"
-  ],
   "scripts": {
     "prepublishOnly": "npm test",
-    "build": "rollup -c .rollup.js --silent",
+    "build": "rollup -c .rollup.js",
     "pretest": "npm run build",
     "test": "echo 'Running tests...'; npm run lint && node --test",
     "test:watch": "node --test --watch .",
-    "lint": "eslint *.js lib/*.js --cache --ignore-path .gitignore --quiet",
+    "lint": "eslint *.js lib/*.js",
     "prettier": "prettier . --write",
     "prepare": "husky install"
   },

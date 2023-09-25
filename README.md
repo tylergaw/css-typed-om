@@ -1,9 +1,9 @@
 # CSS Typed Object Model Polyfill
 
 > [!WARNING]  
-> This is a fork of the original css-typed-om to continue the excellent foundation built there. We may merge this fork back into the original at some point. Also note, this is heavy work-in-progress, if you use this in production, things are guaranteed to break or not work at all. See Feature Implementation Status below for details.
+> This is a fork of the original css-typed-om to continue the excellent foundation built there. It's still uncertain if we will merge this fork back into the original at some point or if it will remain a separate fork. Also note, this is heavy work-in-progress, if you use this in production, things are guaranteed to break or not work at all. See Feature Implementation Status below for details.
 
-A polyfill for using CSS Typed OM in the browser and (I think) jsdom.
+A polyfill for using CSS Typed OM in unsupported browsers and jsdom.
 
 - [Spec](https://drafts.css-houdini.org/css-typed-om/)
 - [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Typed_OM_API)
@@ -37,7 +37,7 @@ This is a work in progress. We don't have 100% of the CSS Typed OM features impl
 | [StylePropertyMapReadyOnly.entries()](https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/entries) | ✅ Yes       |                                                                     |
 | [StylePropertyMapReadyOnly.forEach()](https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/forEach) | ✅ Yes       |                                                                     |
 | [StylePropertyMapReadyOnly.get()](https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/get)         | ✅ Yes       |                                                                     |
-| [StylePropertyMapReadyOnly.getAll()](https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/getAll)   | ❌ No        |                                                                     |
+| [StylePropertyMapReadyOnly.getAll()](https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/getAll)   | ❌ No        | Not 100% sure what it's supposed to do                              |
 | [StylePropertyMapReadyOnly.has()](https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/has)         | ✅ Yes       |                                                                     |
 | [StylePropertyMapReadyOnly.keys()](https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/keys)       | ✅ Yes       |                                                                     |
 | [StylePropertyMapReadyOnly.values()](https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/values)   | ✅ Yes       |                                                                     |
