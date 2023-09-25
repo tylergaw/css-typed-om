@@ -39,7 +39,7 @@ This is a work in progress. We don't have 100% of the CSS Typed OM features impl
 | [StylePropertyMapReadyOnly.get()](https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/get)         | ✅ Yes       |                                                                     |
 | [StylePropertyMapReadyOnly.getAll()](https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/getAll)   | ❌ No        |                                                                     |
 | [StylePropertyMapReadyOnly.has()](https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/has)         | ✅ Yes       |                                                                     |
-| [StylePropertyMapReadyOnly.keys()](https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/keys)       | ❌ No        |                                                                     |
+| [StylePropertyMapReadyOnly.keys()](https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/keys)       | ✅ Yes       |                                                                     |
 | [StylePropertyMapReadyOnly.values()](https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/values)   | ❌ No        |                                                                     |
 | **StylePropertyMap**                                                                                                     |              |                                                                     |
 | [StylePropertyMap](https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMap)                                    | ✅ Yes       |                                                                     |
