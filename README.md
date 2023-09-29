@@ -8,6 +8,7 @@ A polyfill for using CSS Typed OM in unsupported browsers and jsdom.
 - [Spec](https://drafts.css-houdini.org/css-typed-om/)
 - [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Typed_OM_API)
 - [Feature Implementation Status](#feature-implementation-status)
+- [Contributing](CONTRIBUTING.md)
 
 ## Usage
 
