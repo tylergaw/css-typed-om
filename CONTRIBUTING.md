@@ -13,8 +13,8 @@ Issues, discussions, and pull requests are always welcome.
 
 Found a problem? Want a new feature?
 
-- See if your issue or idea has [already been reported]
-- If your idea doesn't feel like it fits in an issue, start a [discussion](discussions)
+- Check GH issues and PR requests on this repot to see if it's already documented or in development
+- If your idea doesn't feel like it fits in an issue, start a new GH Discussion for it
 - Provide a [reduced test case] and/or a [live example]
 
 ## Working locally
@@ -75,15 +75,10 @@ Create a branch for your feature or fix:
 
 ```bash
 # Move into a new branch for your feature
-git checkout -b feature/thing
+git checkout -b your-branch-name
 ```
 
-```bash
-# Move into a new branch for your fix
-git checkout -b fix/something
-```
-
-If your code follows our practices, then push your feature branch:
+Make sure all tests are passing then push your feature branch:
 
 ```bash
 # Test current code
@@ -92,12 +87,7 @@ npm test
 
 ```bash
 # Push the branch for your new feature
-git push origin feature/thing
-```
-
-```bash
-# Or, push the branch for your update
-git push origin update/something
+git push origin your-branch-name
 ```
 
 When you're ready, [open a pull request] with a descriptive title and description. Descriptions should tell a full story with a what, why, and how. Link to any related issues, discussions, or PRs.
