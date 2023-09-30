@@ -9,16 +9,18 @@
       try {
         const styleMap = tester.computedStyleMap();
         window.styleMap = styleMap;
-        console.log("styleMap set as global variable", window.styleMap);
+        console.log("styleMap set as global variable", window.styleMap);        
+        window.cssRules0 = document.styleSheets[0].cssRules[0];
 
-        for (const k of styleMap) {
-          console.log(k)
-        }
-        
       } catch (error) {
         console.warn(error);
       }
     </script>
+    <style>
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+    </style>
   </head>
   <body>
     <h1>CSS Typed OM Polyfill Demo</h1>
