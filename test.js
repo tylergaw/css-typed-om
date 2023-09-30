@@ -1,6 +1,10 @@
 import polyfill from "./demo/css-typed-om-polyfill.js";
 const CSS = {};
-const window = { CSS, CSSRule: { prototype: {} }, Element: { prototype: {} } };
+const window = {
+  CSS,
+  CSSStyleRule: { prototype: {} },
+  Element: { prototype: {} },
+};
 
 polyfill(window);
 
