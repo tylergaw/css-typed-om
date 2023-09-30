@@ -47,7 +47,7 @@ This is a work in progress. We don't have 100% of the CSS Typed OM features impl
 | [StylePropertyMap.append()](https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMap/append)                    | ❌ No        |                                                                     |
 | [StylePropertyMap.clear()](https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMap/clear)                      | ❌ No        |                                                                     |
 | [StylePropertyMap.delete()](https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMap/delete)                    | ❌ No        |                                                                     |
-| [StylePropertyMap.set()](https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMap/set)                          | ✅ Yes       | 🧪 Needs tests                                                      |
+| [StylePropertyMap.set()](https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMap/set)                          | ✅ Yes       |                                                                     |
 | [StylePropertyMap.size](https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/size)                  | ✅ Yes       | Inherited from StylePropertyMapReadOnly                             |
 | [StylePropertyMap.entries()](https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/entries)          | ✅ Yes       | Inherited from StylePropertyMapReadOnly                             |
 | [StylePropertyMap.forEach()](https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/forEach)          | ✅ Yes       | Inherited from StylePropertyMapReadOnly                             |
